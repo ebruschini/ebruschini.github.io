@@ -2,7 +2,7 @@
 
 
 var app, currTaskList,
-    dropbox = new Dropbox.Client({key: bd9wi7q5rooz5gp}),
+    dropbox = new Dropbox.Client({key: DROPBOX_APP_KEY}),
     dropboxLists,
     dropboxTasks,
 
