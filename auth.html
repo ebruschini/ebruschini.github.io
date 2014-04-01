@@ -23,7 +23,7 @@
           // This will redirect the browser to OAuth login.
           dropbox.authenticate();
         });
-
+        console.log('loggedin');
         // Try to finish OAuth authorization.
         dropbox.authenticate({interactive:false}, function (error) {
           if (error) {
