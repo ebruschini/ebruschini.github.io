@@ -317,7 +317,7 @@ $( document ).on( "mobileinit", function () {
 
   
   // Try to finish OAuth authorization.
-  dropbox.authenticate({interactive: true}, function (error) {
+  dropbox.authenticate({interactive: false}, function (error) {
     if (error) {
       alert('Authentication error: ' + error);
     }
