@@ -374,7 +374,7 @@ var app, currTaskList,
       return that;
     };
 
-if (!dropbox.isAuthenticated()) {
+if (!client.isAuthenticated()) {
   console.log('Not authenticated');
 } else {
   console.log('AUTHENTICATED!');

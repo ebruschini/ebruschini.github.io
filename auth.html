@@ -21,17 +21,17 @@
           console.log('Click_on_auth');
           e.preventDefault();
           // This will redirect the browser to OAuth login.
-          dropbox.authenticate();
+          client.authenticate();
         });
 
         // Try to finish OAuth authorization.
-        dropbox.authenticate({interactive:false}, function (error) {
+        client.authenticate({interactive:false}, function (error) {
           if (error) {
             alert('Authentication error: ' + error);
           }
         });
 
-        if (dropbox.isAuthenticated()) {
+        if (client.isAuthenticated()) {
           // Client is authenticated. Display UI.
           $('#login').hide();
           
