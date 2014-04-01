@@ -317,7 +317,7 @@ $( document ).on( "mobileinit", function () {
 
   
   // Try to finish OAuth authorization.
-  client.authenticate({interactive: false}, function (error) {
+  dropbox.authenticate({interactive: false}, function (error) {
     if (error) {
       alert('Authentication error: ' + error);
     }
@@ -328,7 +328,7 @@ $( document ).on( "mobileinit", function () {
     console.log('GO GO GO DROPBOX!!!');
 		e.preventDefault();
 		// This will redirect the browser to OAuth login.
-		client.authenticate();
+		dropbox.authenticate();
   });
 //  $( ":mobile-pagecontainer" ).pagecontainer( "change", $('#dropbox-login-page'));
     
