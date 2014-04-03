@@ -326,7 +326,7 @@ $( document ).on( "mobileinit", function () {
   console.log('adding event handler to dropbox-login');
 	$("#dropbox-login").on("click", function (e) {
     console.log('GO GO GO DROPBOX!!!');
-		event.preventDefault();
+		e.preventDefault();
 		// This will redirect the browser to OAuth login.
 		dropbox.authenticate();
   });
