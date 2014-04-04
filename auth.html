@@ -20,7 +20,7 @@
         console.log('Trying to authenticate...');
         $("#login").on("click", function (e) {
           console.log('Click_on_auth');
-          e.preventDefault();
+          event.preventDefault();
           console.log('e.preventDefault...');
           // This will redirect the browser to OAuth login.
           dropbox.authenticate();
