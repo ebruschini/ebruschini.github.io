@@ -320,6 +320,7 @@ $( document ).on( "mobileinit", function () {
   dropbox.authenticate({interactive: false}, function (error) {
     if (error) {
       alert('Authentication error: ' + error);
+      console.log('Authentication error' + error);
     }
   });
   
