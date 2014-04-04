@@ -382,6 +382,7 @@ if (!dropbox.isAuthenticated()) {
 	dropbox.getDatastoreManager().openDefaultDatastore(function (error, datastore) {
 		if (error) {
 			alert('Error opening default datastore: ' + error);
+      console.log('Error' + error);
 		} else {
 
       dropboxLists = datastore.getTable('tasklists');
