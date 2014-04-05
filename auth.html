@@ -24,13 +24,13 @@
           console.log('e.preventDefault...');
           // This will redirect the browser to OAuth login.
           dropbox.authenticate();
+        console.log('row27');
         });
         
         // Try to finish OAuth authorization.
         dropbox.authenticate({interactive:false}, function (error) {
           if (error) {
             alert('Authentication error: ' + error);
-          console.log('row33');
           }
         });
 
